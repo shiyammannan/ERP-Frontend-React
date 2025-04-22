@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Oxygen:wght@300;400;700&display=swap');
+
+h1, h2, h3, p {
+    font-family: 'Inder', sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inder', sans-serif;
+    background-color: #f3f4f6;
+}
+
+.certificate_view_container {
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Arial, sans-serif';
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Shapes */
+.certificate_view_container::before, .certificate_view_container::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.certificate_view_container::before {
+    width: 400px;
+    height: 400px;
+    background: rgb(167, 139, 250);
+    top: -150px;
+    left: -150px;
+}
+
+.certificate_view_container::after {
+    width: 600px;
+    height: 600px;
+    background: rgb(167, 139, 250);
+    bottom: -300px;
+    right: -200px;
+}
+
+/* Logo Section */
+.certificate_view_logo_container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.certificate_view_logo_container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Content Section */
+.certificate_view_content-container {
+    text-align: center;
+    width: 80%;
+}
+
+/* Title and Text */
+.certificate_view_title {
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(109, 40, 217);
+    margin: 20px 0;
+}
+
+.certificate_view_sur-title {
+    background-color: hotpink;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10; /* Ensure this is above any potential background shapes */
+}
+
+
+.certificate_view_titles {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.certificate_view_text {
+    font-size: 18px;
+    margin: 10px 0;
+    color: rgb(107, 107, 107);
+}
+
+.certificate_view_recipient-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: rgb(109, 40, 217);
+}
+
+.certificate_view_course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: hotpink;
+    margin: 10px 0;
+}
+
+/* Footer Signatures */
+.certificate_view_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.certificate_view_signature-block {
+    text-align: center;
+}
+
+.certificate_view_signature {
+    height: 50px;
+}
+
+.certificate_view_signature-name {
+    font-size: 16px;
+    margin-top: 10px;
+}

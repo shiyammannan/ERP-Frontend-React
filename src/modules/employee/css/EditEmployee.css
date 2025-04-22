@@ -1,0 +1,131 @@
+/* Styles for the modal container */
+.custom-edit-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .custom-edit-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  /* Styles for the modal content */
+  .custom-edit-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    width: 800px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  
+  /* Close button */
+  .custom-edit-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .custom-edit-close:hover {
+    color: darkgray;
+  }
+  
+  /* Form styles */
+  .custom-edit-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .custom-edit-form label {
+    color: #4a5568;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  
+  .custom-edit-form input[type="text"],
+  .custom-edit-form input[type="file"],
+  .custom-edit-form input[type="email"],
+  .custom-edit-form input[type="checkbox"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+  }
+  
+  .custom-edit-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-edit-checkbox input {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #5a67d8;
+  }
+  
+  .custom-edit-checkbox label {
+    margin-left: 0.5rem;
+    color: #4a5568;
+  }
+  
+  .custom-edit-actions {
+    display: flex;
+  }
+  
+  .custom-edit-actions button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .custom-edit-save {
+    background-color: #4299e1;
+    color: white;
+    margin-right: 0.5rem;
+    width: 200px;
+  }
+  
+  .custom-edit-save:hover {
+    background-color: #3182ce;
+  }
+  
+  .custom-edit-cancel {
+    background-color: #a0aec0;
+    color: white;
+    width: 200px;
+  }
+  
+  .custom-edit-cancel:hover {
+    background-color: #718096;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .custom-edit-content {
+      max-width: 95%;
+      width: 95%;
+      padding: 1rem;
+    }
+    
+    .custom-edit-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .custom-edit-save, .custom-edit-cancel {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    
+  }

@@ -1,0 +1,63 @@
+.certificate_modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .certificate_modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  /* Modal overlay to cover the entire screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* ensure it appears above everything else */
+}
+
+/* Modal content with increased width and height */
+.certificate_modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* 90% of the screen width */
+  max-width: 1200px; /* maximum width */
+  height: 80%; /* 80% of the screen height */
+  overflow-y: auto; /* add scroll if content overflows */
+  position: relative;
+}
+
+/* Close button styling */
+.certificate_close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5f5f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.certificate_close-button:hover {
+  background: #ff3b3b;
+}

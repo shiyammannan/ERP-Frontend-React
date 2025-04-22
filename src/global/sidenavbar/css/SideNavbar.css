@@ -1,0 +1,94 @@
+/* General navbar styles */
+.navbar {
+  background-color: rgb(109, 40, 217);
+  color: aliceblue;
+  transition: width 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+/* Side navbar specific styles */
+.navbar.side {
+  width: 18vw; /* Use viewport width for responsiveness */
+  transition: width 0.5s ease-in-out;
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+  overflow-x: hidden;
+}
+
+.navbar.side.collapsed {
+  width: 5vw; /* Adjusted for better responsiveness */
+}
+
+.navbar .toggle-button {
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  background-color: #4c51bf;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .toggle-button:hover {
+  background-color: #5a67d8;
+}
+
+/* Bottom navbar specific styles */
+.navbar.bottom {
+  width: 100vw;
+  height: 4rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: none; /* Hide by default */
+}
+
+.navbar.bottom .nav-item {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .navbar.side {
+    display: none;
+  }
+  .navbar.bottom {
+    display: flex;
+  }
+}
+
+/* Media query for desktop view */
+@media (min-width: 769px) {
+  .navbar.side {
+    display: flex;
+  }
+  .navbar.bottom {
+    display: none;
+  }
+}
+
+/* Additional media queries for very large screens */
+@media (min-width: 1280px) {
+  .navbar.side {
+    width: 15vw; /* Adjusting width for larger screens */
+  }
+
+  .navbar.side.collapsed {
+    width: 5vw;
+  }
+}
+
+@media (min-width: 1536px) {
+  .navbar.side {
+    width: 18vw; /* Keeping the usual width for 1536px screens */
+  }
+
+  .navbar.side.collapsed {
+    width: 5vw;
+  }
+}

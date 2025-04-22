@@ -1,0 +1,61 @@
+.course_view_modal-header {
+  font-size: larger;
+  font-weight: bolder;
+}
+.course_title {
+  text-align: center;
+}
+.course_view_modal-buttons{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.course_view_modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.course_view_modal-overlay {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Overlay background color and opacity */
+  display: flex; /* Flexbox layout for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000;
+}
+
+.modal_fields_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.modal-field {
+  flex: 1 1 calc(50% - 10px); /* 2 per row */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+/* Optional responsive tweak */
+@media (max-width: 600px) {
+  .modal-field {
+    flex: 1 1 100%; /* Stack on small screens */
+  }
+}
+

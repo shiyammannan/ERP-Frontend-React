@@ -1,0 +1,48 @@
+.table-wrapper {
+    overflow-x: auto;
+  }
+  
+  #title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  #income-expense-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  #year-select, #income-expense-select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table-wrapper th, .table-wrapper td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table-wrapper th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .table-wrapper tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-wrapper tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table-wrapper td.highlighted {
+    background-color: #ffeb3b;
+    font-weight: bold;
+  }
+  

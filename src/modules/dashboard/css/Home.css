@@ -1,0 +1,24 @@
+.home-container {
+  padding-left: 10px; /* Adjust based on the width of the side navbar */
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+  height: calc(100vh - 64px); /* Adjust based on the navbar height */
+}
+
+.card-icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #a0f0a0, #ffffff);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: #f5f3ff;
+}

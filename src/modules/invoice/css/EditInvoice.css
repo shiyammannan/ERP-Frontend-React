@@ -1,0 +1,134 @@
+/* Modal overlay and container */
+.invoice_edit_modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.invoice_edit_modal-container {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 900px; /* Added to control maximum width */
+  overflow: hidden; /* Added to handle content overflow */
+}
+
+/* Header */
+.invoice_edit_modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Form rows */
+.modal-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.modal-form .form-row label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.modal-form .form-row label:last-child {
+  margin-right: 0;
+}
+
+/* Items section */
+.items-section {
+  margin-top: 20px;
+}
+
+.items-section .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add item button */
+.add-item-button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Grand total */
+.grand-total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Submit button */
+.modal-submit-buttons {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8c00ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-submit-buttons:hover {
+  background-color: #a200ff;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .modal-form .form-row {
+    flex-direction: column;
+  }
+
+  .modal-form .form-row label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .modal-form .form-row label:last-child {
+    margin-bottom: 0;
+  }
+
+  .items-section .form-row {
+    flex-direction: column;
+  }
+
+  .items-section .form-row label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .items-section .form-row label:last-child {
+    margin-bottom: 0;
+  }
+
+  .modal-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal-submit-buttons {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

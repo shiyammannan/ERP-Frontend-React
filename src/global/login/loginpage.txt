@@ -1,0 +1,56 @@
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import SideNavbar from "./global/sidenavbar/SideNavbar";
+import TopNavbar from "./global/topnavbar/TopNavbar"; 
+import HomePage from "./modules/dashboard/Home";
+import AdmissionPage from "./modules/admission/AdmissionPage";
+import StudentProfile from "./modules/studentprofile/StudentProfile";
+import Batches from "./modules/batches/Batches";
+import Fees from "./modules/fees/Fees";
+import FirmProfile from "./modules/firmprofile/FirmProfile"
+import Invoice from "./modules/invoice/Invoice";
+import Transaction from "./modules/transaction/Transaction";
+import Employee from "./modules/employee/Employee";
+import Courses from "./modules/courses/Courses";
+import Login from "./global/login/Login"; // Adjust the path if necessary
+
+const App = () => {
+  // State to track if the user is authenticated
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  return (
+    <BrowserRouter>
+      {isAuthenticated ? (
+        // If the user is authenticated, show the main application
+        <div className="flex h-screen">
+          <SideNavbar /> {/* Side navigation bar */}
+          <div className="flex flex-col w-full">
+            <TopNavbar /> {/* Top navigation bar */}
+            <Routes>
+              <Route path="/" exact element={<HomePage />} /> {/* Home Page */}
+              <Route path="/admission" exact element={<AdmissionPage />} /> {/* Admission Page */}
+              <Route path="/studentprofile" exact element={<StudentProfile />} /> {/* Student Profile Page */}
+              <Route path="/batches" exact element={<Batches />} /> {/* Batches Page */}
+              <Route path="/fees" exact element={<Fees />} /> {/* Fees Page */}
+              <Route path="/invoice" exact element={<Invoice />} /> {/* Invoice Page */}
+              <Route path="/transaction" exact element={<Transaction />} /> {/* Transaction Page */}
+              <Route path="/employee" exact element={<Employee />} /> {/* Employee Page */}
+              <Route path="/courses" exact element={<Courses />} /> {/* Courses Page */}
+              <Route path="/settings" exact element={<Courses />} /> {/* Settings Page */}
+              <Route path="/firmprofile" exact element={<FirmProfile />} /> {/* Firm Profile Page */}
+              <Route path="*" element={<Navigate to="/" />} /> {/* Redirect to home if route not found */}
+            </Routes>
+          </div>
+        </div>
+      ) : (
+        // If the user is not authenticated, show the login page
+        <Routes>
+          <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} /> {/* Login Page */}
+          <Route path="*" element={<Navigate to="/login" />} /> {/* Redirect to login if not authenticated */}
+        </Routes>
+      )}
+    </BrowserRouter>
+  );
+};
+
+export default App;

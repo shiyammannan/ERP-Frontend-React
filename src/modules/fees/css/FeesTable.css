@@ -1,0 +1,18 @@
+/* Add these styles to your CSS file or in a <style> tag in your component */
+
+.fees-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .fees-status.paid {
+    color: green;
+  }
+  
+  .fees-status.pending {
+   color: red;
+  }
+  

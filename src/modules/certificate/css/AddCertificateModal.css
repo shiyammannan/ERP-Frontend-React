@@ -1,0 +1,102 @@
+/* AddInvoiceModal.css */
+
+.certificate_add_modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .certificate_add_modal-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 1000px;
+    max-width: 90%;
+    max-height: 90vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificate_add_modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .certificate_add_modal-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .certificate_add_modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .certificate_add_modal-form .certificate_add_form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .certificate_add_modal-form .certificate_add_form-row label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .certificate_add_modal-form .form-row label:last-child {
+    margin-right: 0;
+  }
+  
+  .certificate_add_modal-form input,
+  .certificate_add_modal-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .certificate_add_modal-submit-button {
+    padding: 10px 15px;
+    background-color:  rgb(109, 40, 217);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .certificate_add_head{
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+} 
+@media (max-width: 768px) {
+  .certificate_add_modal-form .certificate_add_form-row {
+    flex-direction: column;
+  }
+
+  .certificate_add_modal-form .certificate_add_form-row label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .certificate_add_modal-form .certificate_add_form-row label:last-child {
+    margin-bottom: 0;
+  }
+
+  .certificate_add_modal-submit-buttons {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

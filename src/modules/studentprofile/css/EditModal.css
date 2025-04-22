@@ -1,0 +1,21 @@
+.personalheading{
+text-align: center;
+     font-weight: bold;
+}
+.editstudentdetails{
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem /* 16px */;
+}
+.editlable{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.educationheading{
+  text-align: center;
+     font-weight: bold;
+}
+.ReactModal__Overlay {
+  z-index: 2000;
+}

@@ -1,0 +1,72 @@
+.home-container {
+    padding-left: 10px; /* Adjust based on the width of the side navbar */
+    overflow-y: auto; /* Enable vertical scrolling for the content */
+    height: calc(100vh - 64px); /* Adjust based on the navbar height */
+  }
+  .card-icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #8fee8f, #47ac3a);
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+  }
+  body{
+    background-color:#f5f3ff;
+  }
+  /* modal.css */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+  .ag-theme-alpine {
+    width: 100%;
+  }
+}
+.card-icon-container {
+  margin-right: 1rem;
+}
+.card-icon {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.breadcrumbs nav {
+  font-size: 0.875rem;
+}
+
+  

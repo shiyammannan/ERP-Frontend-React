@@ -1,0 +1,76 @@
+/* AddInvoiceModal.css */
+.certificate_edit_body{
+  max-height: 90vh;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.certificate_edit_modal-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.certificate_edit_modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate_edit_modal-form .certificate_edit_form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.certificate_edit_modal-form .certificate_edit_form-row label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.certificate_edit_modal-form .certificate_edit_form-row label:last-child {
+  margin-right: 0;
+}
+
+.certificate_edit_modal-form input,
+.certificate_edit_modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.certificate_edit_modal-submit-button {
+  padding: 10px 15px;
+  background-color:  rgb(109, 40, 217);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.certificate_edit_head{
+  font-size: 30px;
+  font-weight: bolder;
+} 
+@media (max-width: 768px) {
+  .certificate_edit_modal-form .certificate_edit_form-row {
+    flex-direction: column;
+  }
+
+  .certificate_edit_modal-form .certificate_edit_form-row label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .certificate_edit_modal-form .certificate_edit_form-row label:last-child {
+    margin-bottom: 0;
+  }
+
+  .certificate_edit_modal-submit-buttons {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
